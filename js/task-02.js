@@ -1,4 +1,4 @@
-function mostFrequentChar(someString) {
+function mostFrequentChasdr(someString) {
 	let str = someString.trim();
 
 
@@ -47,3 +47,27 @@ function recursiveCount(letter, word) {
 mostFrequentChar("javascript is awesome!");
 
 //mostFrequentChar("bobak");
+
+function mostFrequentChar(str) {
+	str = str.trim();
+	const counter = {};
+
+	for (const char of str) {
+		if (char === ' ') continue;
+		counter[char] = (counter[char] || 0) + 1;
+	}
+
+	console.log(counter);
+	return;
+	let maxChar = null;
+	let maxCount = 0;
+
+	for (const char in counter) {
+		if (counter[char] > maxCount) {
+			maxChar = char;
+			maxCount = counter[char];
+		}
+	}
+
+	console.log(`Більше всього букви "${maxChar}" (${maxCount} разів)`);
+}
