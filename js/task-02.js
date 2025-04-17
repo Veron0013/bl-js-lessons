@@ -72,28 +72,77 @@
 //	console.log(`Більше всього букви "${maxChar}" (${maxCount} разів)`);
 //}
 
-function firstUniqueChar(str) {
-	str = str.trim();
-	const counter = {};
+//function firstUniqueChar(str) {
+//	str = str.trim();
+//	const counter = {};
 
-	for (const char of str) {
-		if (char === ' ') continue;
-		counter[char] = (counter[char] || 0) + 1;
-	}
+//	for (const char of str) {
+//		if (char === ' ') continue;
+//		counter[char] = (counter[char] || 0) + 1;
+//	}
 
-	let minChar = null;
-	let minCount = 1;
+//	let minChar = null;
+//	let minCount = 1;
 
-	for (const char in counter) {
-		if (counter[char] === minCount) {
-			minChar = char;
-			break;
-		}
-	}
+//	for (const char in counter) {
+//		if (counter[char] === minCount) {
+//			minChar = char;
+//			break;
+//		}
+//	}
 
-	console.log(`Менше всього букви "${minChar}"`);
-}
+//	console.log(`Менше всього букви "${minChar}"`);
+//}
 
 
-firstUniqueChar("abacabad");
-firstUniqueChar("aabbcc");
+//firstUniqueChar("abacabad");
+//firstUniqueChar("aabbcc");
+
+
+
+//function reverseArray(pArray) {
+
+//	let newArray = [];
+//	for (let i = pArray.Length - 1; i >= 0; i--) {
+//		newArray.push(pArray[i]);
+//	}
+
+//	for (let i = 0; i >= pArray.Length; i++) {
+//		newArray.unshift(pArray[i]);
+//	}
+
+//}
+
+
+//console.log(reverseArray([1, 2, 3]));
+
+//function longestWord(sampleWord) {
+//	let sampleArr = sampleWord.trim().split(" ");
+
+//	let longWord = "";
+
+//	for (const el of sampleArr) {
+//		if (longWord.length < el.length) {
+//			longWord = el;
+//		}
+//	}
+
+//	return longWord
+
+//}
+
+//console.log(longestWord("I am learning JavaScript right now")); // -> "JavaScript"
+
+
+//function countVowels(str) {
+//	const letters = str.match(/[aeiou]/gi); // g = глобально, i = не зважаючи на регістр
+//	return letters ? str.length - letters : str.length;
+//}
+
+//console.log(countVowels("Hello world"));
+
+//function sumArray(arr) {
+//	return arr.reduce((a, b) => a + b, 0);
+//}
+
+//console.log(sumArray([5, 10, 15]));
