@@ -146,3 +146,40 @@
 //}
 
 //console.log(sumArray([5, 10, 15]));
+
+
+//function getUniqueValues(arr) {
+//	let newArray = [];
+//	for (let i = 0; i < arr.length; i++) {
+//		if (newArray.includes(arr[i])) {
+//			continue;
+//		}
+//		newArray.push(arr[i]);
+//	}
+//	return newArray;
+//}
+
+//console.log(getUniqueValues([1, 2, 2, 3, 4, 4, 5])); // 20
+//console.log(getUniqueValues(["a", "b", "a", "c", "b"])); // 0
+
+//function areObjectsEqual(ob1, ob2) {
+//	let a = true;
+
+//	for (const [key, value] of Object.entries(ob1)) {
+//		if (ob2[key] !== value) {
+//			a = false;
+//		}
+//	}
+//	return a;
+//}
+
+
+//console.log(areObjectsEqual(
+//	{ name: "Alice", age: 30 },
+//	{ age: 30, name: "Alice" }
+//)); // true
+
+//console.log(areObjectsEqual(
+//	{ name: "Alice", age: 30 },
+//	{ name: "Alice", age: 31 }
+//)); // false
