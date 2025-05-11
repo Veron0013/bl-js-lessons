@@ -136,7 +136,7 @@
 
 //function countVowels(str) {
 //	const letters = str.match(/[aeiou]/gi); // g = глобально, i = не зважаючи на регістр
-//	return letters ? str.length - letters : str.length;
+//	return letters ? str.length - letter s : str.length;
 //}
 
 //console.log(countVowels("Hello world"));
